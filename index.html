@@ -51,7 +51,7 @@
       <!--Main Content start-->
       <div class="main-content">
         <!--Home section start-->
-        <section class="home section" id="home">
+        <section class="home active section" id="home">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
@@ -68,7 +68,7 @@
                   developing visually stunning and functional websites, as well
                   as designing and implementing efficient software systems.
                 </p>
-                <a href="#contact" class="btn hire-me">More About Me</a>
+                <a href="resume/resume.pdf" class="btn" download>Downlaod Resume</a>
               </div>
               <div class="home-img padd-15">
                 <img src="images/Kofi4.jpeg" alt="" />
@@ -135,8 +135,7 @@
                   </div>
                   <div class="row">
                     <div class="buttons padd-15">
-                      <a href="#" class="btn">Download Resume</a>
-                      <a href="#" class="btn">More About Me</a>
+                      <a href="#contact" data-section-index = "1" class="btn hire-me">More About Me</a>
                     </div>
                   </div>
                 </div>
@@ -495,33 +494,26 @@
             <h4 class="contact-sub-title padd-15">I AM VERY RESPONSIVE TO EMAIL</h4>
 
             <!------Contact Form Start-->
+            <form id="contactForm" method="post">
             <div class="row">
               <div class="contact-form padd-15">
                 <div class="row">
                   <div class="form-item col-6 padd-15">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Name">
+                      <input type="text" name="name" class="form-control" placeholder="Name">
                     </div>
                   </div>
 
                   <div class="form-item col-6 padd-15">
                     <div class="form-group">
-                      <input type="email" class="form-control" placeholder="Email">
+                      <input type="email" name="email" class="form-control" placeholder="Email">
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="form-item col-12 padd-15">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Subject">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                     <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                      <input type="text" name ="subject" class="form-control" placeholder="Subject">
                     </div>
                   </div>
                 </div>
@@ -529,12 +521,21 @@
                 <div class="row">
                   <div class="form-item col-12 padd-15">
                     <div class="form-group">
-                     <button type="button" class="btn"> Send A Message</button>
+                     <textarea name="message" class="form-control" id="" placeholder="Message"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                     <button type="submit" class="btn"> Send A Message</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </form>
             <!------Contact Form End-->
           </div>
         </section>
